@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="icon" href="/monstruo.png" type="image/png">
+    <link rel="stylesheet" href="/ruta-a/sweetalert2.css">
+    <title>Solicitud de Contacto</title>
+</head>
+
+<body>
+    <section class="hero">
+        <div class="navbar">
+            <ul>
+                <li><a href="#" id="inicio-link">Inicio</a></li>
+                <li><a href="#" id="productos-link">Productos</a></li>
+                <li><a class="active" href="/index.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <h1>Solicitud de Contacto</h1>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido">
+                </div>
+                <div class="form-group">
+                    <label for="dni">DNI:</label>
+                    <input type="text" id="dni" name="dni">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+                <div class="form-group">
+                    <label for="tipoSeguro">Tipo de Seguro:</label>
+                    <select id="tipoSeguro" name="tipoSeguro" required>
+                        <option value="basico">Básico</option>
+                        <option value="intermedio">Intermedio</option>
+                        <option value="premium">Premium</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="valorSeguro">Valor del Seguro:</label>
+                    <span id="valorSeguro">$500</span>
+                </div>
+                <div class="form-group">
+                    <button type="button">Enviar Solicitud</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <div class="footer">
+        <p>&copy; 2023 Compañía de Seguros</p>
+    </div>
+    <script src="/scripts/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>

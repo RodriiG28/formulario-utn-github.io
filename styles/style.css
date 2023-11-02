@@ -1,0 +1,142 @@
+/* Estilos generales del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(/istockphoto-1453891792-2048x2048.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #007BFF;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos para los enlaces de navegación en el navbar */
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem;
+    margin: 0 1rem;
+    font-size: 1rem;
+}
+
+/* Estilos para los enlaces de navegación cuando se pasa el ratón sobre ellos */
+.navbar a:hover {
+    background-color: #0069d97f;
+    border-radius: 5px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+.active {
+    background-color: #92a4ff;
+}
+
+/* Estilos para el contenedor del formulario */
+.container {
+    background-color: #ffffffe0;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    text-align: center;
+    max-width: 500px;
+    width: 90vh;
+    margin: 20px auto;
+}
+
+/* Estilos para los títulos */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Estilos para grupos de formulario */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+/* Estilos para entradas de texto y selectores */
+input,
+select {
+    width: 90%;
+    height: 90%;
+    padding: 0.5rem;
+    background-color: #419fd28c;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+}
+
+/* Estilos específicos para selectores */
+select {
+    margin-left: 1rem;
+}
+
+/* Estilos para botones */
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+/* Estilos para botones cuando se pasa el ratón sobre ellos */
+button:hover {
+    background-color: #0069D9;
+}
+
+/* Estilos para botones cuando se presionan */
+button:active {
+    transform: scale(0.98);
+}
+
+/* Estilos para elementos específicos */
+#valorSeguro {
+    font-weight: bold;
+}
+
+/* Estilos para opciones en los selectores */
+option {
+    font-size: 1rem;
+}
+
+/* Estilos para el footer */
+.footer {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
