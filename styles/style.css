@@ -1,6 +1,6 @@
 /* Estilos generales del cuerpo */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Trebuchet MS, Lucida Sans Unicode, Lucida Grande, Lucida Sans, Arial, sans-serif;
     background-image: url(../istockphoto-1453891792-2048x2048.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -19,6 +19,7 @@ body {
     padding: 1rem 0;
     display: flex;
     justify-content: center;
+
 }
 
 /* Estilos para los enlaces de navegación en el navbar */
@@ -83,6 +84,20 @@ h1 {
     margin-bottom: 1.5rem;
 }
 
+/* Alinea todos los elementos del formulario a la izquierda */
+.form-group {
+    text-align: left;
+}
+
+/* Anula la alineación para los elementos específicos que deseas centrar */
+.form-group:nth-child(7),
+.form-group:nth-child(8) {
+    text-align: center;
+    
+}
+.form-group:nth-child(7) {
+    font-size: 1.5rem;
+}
 /* Estilos para entradas de texto y selectores */
 input,
 select {
@@ -98,7 +113,7 @@ select {
 
 /* Estilos específicos para selectores */
 select {
-    margin-left: 1rem;
+    width: 93%;
 }
 
 /* Estilos para botones */
@@ -110,7 +125,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 0.5rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 /* Estilos para botones cuando se pasa el ratón sobre ellos */
@@ -139,4 +154,47 @@ option {
     color: #fff;
     text-align: center;
     padding: 1rem 0;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        max-width: 100vh;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        margin: 0.5rem 0;
+        text-align: center;
+    }
+
+    .container {
+        max-width: 80%;
+        /* Utiliza todo el ancho de la pantalla */
+        padding: 1rem;
+        /* Añade un poco de espacio entre los elementos */
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 80%;
+    }
+
+    .navbar {
+        max-width: 100%;
+        flex-direction: column;
+
+    }
+
+    .navbar a {
+        margin: 0.5rem 0;
+
+    }
 }
